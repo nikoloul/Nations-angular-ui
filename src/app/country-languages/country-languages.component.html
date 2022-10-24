@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="country-languages.component.css">
+</head>
+<table>
+    <thead>
+        <tr>
+            <th>Languages</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let language of allLanguages">
+            <td>{{language.languageName}}</td>
+        </tr>
+    </tbody>
+</table>
+</html>

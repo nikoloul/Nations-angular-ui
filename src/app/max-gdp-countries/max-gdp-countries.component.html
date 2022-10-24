@@ -1,0 +1,20 @@
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Country Code 3</th>
+            <th>Year</th>
+            <th>Population</th>
+            <th>Gdp</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let country of maxGdpCountries">
+            <td>{{country[0]}}</td>
+            <td>{{country[1]}}</td>
+            <td>{{country[2]}}</td>
+            <td>{{country[3]}}</td>
+            <td>{{country[4]}}</td>
+        </tr>
+    </tbody>
+</table>

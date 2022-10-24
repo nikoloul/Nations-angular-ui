@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="all-countries.component.css">
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Area</th>
+            <th>Country code 2</th>
+            <th>Languages</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let country of countries">
+            <td>{{country.name}}</td>
+            <td>{{country.area}}</td>
+            <td>{{country.countryCode2}}</td>
+            <td><button class="button" (click)="showLanguages(country.countryId)">Show all Languages spoken in {{country.name}}</button></td>
+        </tr>
+    </tbody>
+</table>
